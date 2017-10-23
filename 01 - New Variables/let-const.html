@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
+// cannot re-declare let more than once in the same scope
+// difference let and const - const cannot be updated, let can
   const key = 'abc123';
   let points = 50;
   let winner = false;
 
-  const person = {
-    name: 'Wes',
-    age: 28
+  if (points > 40) {
+    let winner = true;
   }
-
-  const wes = Object.freeze(person);
 
 </script>
 </body>
